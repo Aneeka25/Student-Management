@@ -36,6 +36,15 @@ class StudentOperations {
         }
         return result;
     }
+    public List<Student> searchStudentByBranch(String branch) {
+        List<Student> result = new ArrayList<>();
+        for (Student student : students) {
+            if (student.getBranch().equalsIgnoreCase(branch)) {
+                result.add(student);
+            }
+        }
+        return result;
+    }
 
     
     
