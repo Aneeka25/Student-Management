@@ -56,3 +56,8 @@ class Student {
     public void setcgpa(float cgpa) {
         this.cgpa = cgpa;
     }
+    public void display() {
+        System.out.println("Name: " + getName() + " PRN: " + getPRN() + "Branch: " + getBranch() + "Batch: "
+                + getBatch() + "CGPA: " + getcgpa());
+    }
+}
