@@ -10,3 +10,13 @@ class StudentOperations {
         students.add(student);
         System.out.println("Student Added");
     }
+    public void displayStudents() {
+        if (students.isEmpty()) {
+            System.out.println("No students to display.");
+            return;
+        }
+        for (Student student : students) {
+            student.display();
+        }
+    }
+    
