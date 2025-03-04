@@ -27,4 +27,15 @@ class StudentOperations {
         }
         return null;
     }
+     public List<Student> searchStudentByName(String name) {
+        List<Student> result = new ArrayList<>();
+        for (Student student : students) {
+            if (student.getName().equalsIgnoreCase(name)) {
+                result.add(student);
+            }
+        }
+        return result;
+    }
+
+    
     
